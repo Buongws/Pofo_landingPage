@@ -102,16 +102,16 @@ window.onload = function () {
 
 galleryItems.forEach((item) => {
   item.addEventListener("mouseover", () => {
-    galleryItems.forEach((item) =>
-      item.classList.remove("filter-button-active")
-    );
+    galleryItems.forEach((item) => item.classList.remove("filter-button-active"));
     item.classList.add("filter-button-active");
   });
 
+  item.addEventListener("mouseleave", () => {
+    galleryItems.forEach((item) => item.classList.remove("filter-button-active"));
+    // item.classList.add("filter-button-active");
+  });
   item.addEventListener("focus", () => {
-    galleryItems.forEach((item) =>
-      item.classList.remove("filter-button-active")
-    );
+    // galleryItems.forEach((item) => item.classList.remove("filter-button-active"));
     item.classList.add("filter-button-active");
   });
 });
@@ -120,45 +120,45 @@ galleryItems.forEach((item) => {
 const hiddenElementsBottom = document.querySelectorAll(".hiddenBottom");
 const hiddenElementsRight = document.querySelectorAll(".hiddenRight");
 
-// const observer_bottom = new IntersectionObserver((entries) => {
-//   entries.forEach((entry) => {
-//     console.log(entry);
-//     if (entry.isIntersecting) {
-//       entry.target.classList.add("showBottom");
-//       observer_bottom.unobserve(entry.target);
-//     } else {
-//       entry.target.classList.remove("showBottom");
-//     }
-//   });
-// });
-// const observe_right = new IntersectionObserver((entries) => {
-//   entries.forEach((entry) => {
-//     if (entry.isIntersecting) {
-//       entry.target.classList.add("showRight");
-//       observe_right.unobserve(entry.target);
-//     } else {
-//       entry.target.classList.remove("showRight");
-//     }
-//   });
-// });
-
-const observer = new IntersectionObserver((entries) => {
+const observer_bottom = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
+    console.log(entry);
     if (entry.isIntersecting) {
-      if (entry.target.classList.contains("hiddenBottom")) {
-        entry.target.classList.add("showBottom");
-      } else if (entry.target.classList.contains("hiddenRight")) {
-        entry.target.classList.add("showRight");
-      } else if (entry.target.classList.contains("hiddenLeft")) {
-        entry.target.classList.add("showLeft");
-      }
-      observer.unobserve(entry.target);
+      entry.target.classList.add("showBottom");
+      observer_bottom.unobserve(entry.target);
     } else {
       entry.target.classList.remove("showBottom");
+    }
+  });
+});
+const observe_right = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("showRight");
+      observe_right.unobserve(entry.target);
+    } else {
       entry.target.classList.remove("showRight");
     }
   });
 });
+
+// const observer = new IntersectionObserver((entries) => {
+//   entries.forEach((entry) => {
+//     if (entry.isIntersecting) {
+//       if (entry.target.classList.contains("hiddenBottom")) {
+//         entry.target.classList.add("showBottom");
+//       } else if (entry.target.classList.contains("hiddenRight")) {
+//         entry.target.classList.add("showRight");
+//       } else if (entry.target.classList.contains("hiddenLeft")) {
+//         entry.target.classList.add("showLeft");
+//       }
+//       observer.unobserve(entry.target);
+//     } else {
+//       entry.target.classList.remove("showBottom");
+//       entry.target.classList.remove("showRight");
+//     }
+//   });
+// });
 
 hiddenElementsRight.forEach((el) => {
   observe_right.observe(el);

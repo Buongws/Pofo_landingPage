@@ -1,0 +1,336 @@
+.service {
+  padding-left: 15rem;
+  padding-right: 15rem;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  background-color: $background-color_3;
+
+  .service-title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    margin-bottom: 15% !important;
+    h5 {
+      margin-bottom: 20px !important;
+      font-weight: bold;
+      color: $color_6;
+    }
+    p {
+      text-align: center;
+    }
+  }
+
+  .service-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+
+    .service-hover {
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $color_5;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 0;
+        z-index: 1;
+        transition: all 0.3s ease;
+        color: $color_3;
+        -webkit-animation: out 500ms forwards;
+        animation: out 500ms forwards;
+      }
+      &:hover {
+        &:before {
+          height: 100%;
+          -webkit-animation: in 500ms forwards;
+          animation: in 500ms forwards;
+          transition-timing-function: ease-in-out;
+          transition-duration: 300ms;
+        }
+      }
+      .service-icon {
+        display: flex;
+        justify-content: center;
+        background-color: $background-color_4;
+        border-radius: 100%;
+        height: 90px;
+        margin: 0 auto;
+        text-align: center;
+        vertical-align: middle;
+        width: 90px;
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 5;
+        transition: all 0.5s ease-in-out;
+      }
+      &:hover {
+        .service-icon {
+          background-color: $color_3;
+          i {
+            color: $color_5;
+          }
+        }
+        .service-text-content {
+          color: $color_3;
+        }
+      }
+      .icon-center {
+        display: flex;
+        align-items: center;
+        i {
+          font-size: 30px;
+          color: white;
+        }
+      }
+    }
+    .service-box-content {
+      position: relative;
+      overflow: hidden;
+      background-color: $background-color_5;
+      padding-top: 18% !important;
+      padding-right: 0px !important;
+      padding-bottom: 18% !important;
+      padding-left: 0px !important;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+      .service-text-content {
+        h4 {
+          font-weight: 600;
+          margin-bottom: 10px;
+          font-size: 14px;
+        }
+        text-align: center;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        z-index: 5;
+      }
+    }
+  }
+}
+@media (max-width: $bigres) {
+  .service {
+    padding-left: 10rem;
+    padding-right: 10rem;
+    .service-box {
+      gap: 20px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+@media (max-width: $mediumres) {
+  .service {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .service-box {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+@media (max-width: $smallres) {
+  .service {
+    .service-box {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 40px;
+    }
+  }
+}
+
+@-webkit-keyframes in {
+  0% {
+    background-color: $color_5;
+  }
+
+  100% {
+    background-color: #2f2f2f;
+  }
+}
+
+@keyframes in {
+  0% {
+    background-color: $color_5;
+  }
+
+  100% {
+    background-color: #2f2f2f;
+  }
+}
+
+@-webkit-keyframes out {
+  100% {
+    background-color: $color_5;
+  }
+
+  0% {
+    background-color: #2f2f2f;
+  }
+}
+
+@keyframes out {
+  100% {
+    background-color: $color_5;
+  }
+
+  0% {
+    background-color: #2f2f2f;
+  }
+}
+// SERVICE NUMBER
+.service-number {
+  padding-left: 15rem;
+  padding-right: 15rem;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  .service-number-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    i {
+      font-size: 35px;
+    }
+
+    p {
+      font-size: 12px;
+      color: #939393;
+      display: block !important;
+    }
+
+    h6 {
+      font-size: 22px;
+      line-height: 27px;
+      font-weight: bold;
+      margin-bottom: 0px !important;
+    }
+  }
+}
+@media (max-width: $bigres) {
+  .service-number {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+}
+@media (max-width: $mediumres) {
+  .service-number {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+@media (max-width: $smallres) {
+  .service-number {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
+    .service-number-content {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      .number-text {
+        text-align: center;
+      }
+    }
+  }
+}
+// SERVICE INFORMATION
+.service-information {
+  display: flex;
+  justify-content: space-between;
+  .service-i-content {
+    width: 50%;
+    padding: 5% !important;
+    background-color: $background-color_3;
+    .service-i-title {
+      h5:first-child {
+        font-size: 27px;
+        line-height: 32px;
+        margin: 0;
+      }
+      h5:last-child {
+        font-size: 27px;
+        line-height: 32px;
+        font-weight: bold;
+      }
+    }
+    .question-content {
+      .question {
+        background-color: $color_3;
+        p {
+          font-size: 14px;
+          padding: 35px 28px 25px;
+          display: none;
+          background-color: $background-color_3;
+          line-height: 24px;
+        }
+        header {
+          display: flex;
+          justify-content: space-between;
+          background: #fff;
+          border-radius: 0;
+          padding: 18px 40px 19px 28px;
+          position: relative;
+
+          h5 {
+            font-size: 15px;
+            margin: 0;
+            span {
+              font-weight: 600;
+              color: $color_5;
+            }
+          }
+          button {
+            padding: 0;
+            border: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+          }
+          i {
+            font-size: 25px;
+            transition: all 0.3s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+  .service-i-image {
+    background-image: url(../assets//service/homepage-3.jpeg);
+    background-position: center;
+    width: 50%;
+    background-size: cover;
+  }
+}
+@media (max-width: $mediumres) {
+  .service-information {
+    display: flex;
+    flex-direction: column;
+    .service-i-content {
+      width: 100%;
+    }
+    .service-i-image {
+      width: 100%;
+      min-height: 500px !important;
+    }
+  }
+}
