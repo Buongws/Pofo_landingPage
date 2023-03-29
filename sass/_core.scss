@@ -13,6 +13,8 @@ $background-color_2: #ffffff;
 $background-color_3: #f7f7f7;
 $background-color_4: #ff214f;
 $background-color_5: transparent;
+$background-color_5:rgba(0,0,0,.15);
+$background-color_6:rgba(0,0,0,.70);
 
 $order_1:1;
 $order_2:2;
@@ -23,6 +25,6 @@ $order_6:6;
 $order_7:7;
 $order_8:8;
 
-$bigres : 1280px;
-$mediumres :1024px;
-$smallres : 768px;
+$desktops : 1280px;
+$laptops :1024px;
+$mobiles : 768px;

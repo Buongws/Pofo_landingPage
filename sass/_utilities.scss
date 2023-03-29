@@ -43,7 +43,10 @@ p {
 ul {
   list-style: none;
 }
-
+span{
+  display: block;
+  
+}
 .hiddenBottom {
   opacity: 0;
   -webkit-filter: blur(5px);

@@ -143,14 +143,14 @@
   }
 
   //  RESONSIVE NAVBAR
-  @media (max-width: $bigres) {
+  @media (max-width: $desktops) {
     .navbar-container {
       padding-left: 10rem;
       padding-right: 10rem;
     }
   }
 
-  @media (max-width: $mediumres) {
+  @media (max-width: $laptops) {
     .navbar-container {
       padding-left: 5rem;
       padding-right: 5rem;
@@ -183,7 +183,7 @@
     }
   }
 
-  @media (max-width: $smallres) {
+  @media (max-width: $mobiles) {
     background-attachment: inherit;
     background-position: center center;
     height: 480px;
