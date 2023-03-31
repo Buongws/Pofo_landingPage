@@ -7,6 +7,7 @@ $color_6: #232323;
 $color_7: #6f6f6f;
 $color_8: #939393;
 $color_9: #d6d5d5;
+$color_10:#484848;
 $font-family_1: "Montserrat", sans-serif;
 $background-color_1: #1c1c1c;
 $background-color_2: #ffffff;
@@ -28,3 +29,17 @@ $order_8:8;
 $desktops : 1280px;
 $laptops :1024px;
 $mobiles : 768px;
+
+
+$padding_desktops_nav: 0 calc(15rem - 10%);
+$padding_laptops_nav: 0 calc(10rem - 10%);
+$padding_mobiles_nav: 0 5rem;
+
+$padding_desktops_section: 130px calc(15rem - 10%);
+$padding_laptops_section: 90px calc(10rem - 10%);
+$padding_mobiles_section: 75px 5rem
+
+// padding:$padding_desktops_section;
+// padding:$padding_laptops_section;
+
+// padding:$padding_mobiles_section;

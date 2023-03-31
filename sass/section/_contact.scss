@@ -1,0 +1,228 @@
+.contact-form{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    .contact-brand-left{
+        position: relative;
+        overflow: hidden;
+        .contact-image-brand{
+            height: 100%;
+            img{
+              display: block;
+              height: 100%;
+              width: 100%;
+              -o-object-fit: cover;
+                 object-fit: cover;
+            }
+        }
+    }
+    .contact-banner-form{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: $color_6;
+        padding: 100px;
+        .contact-form-title{
+          margin: 0 auto;
+          text-align: center;
+        }
+        span{
+            color: $color_7;
+            font-size: 12px;
+            line-height: 23px;
+            font-weight: 500;
+            margin-bottom: 15px;
+          }
+          h4{
+            font-weight: 600;
+            font-size: 32px;
+            color: $color_9;
+          }
+        .contact-form{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .field{
+              input, textarea {
+                width: 100%;
+                margin: 0 0 10px 0;
+                max-width: 100%;
+                padding: 10px 0px;
+                resize: none;
+                outline: none;
+                border: none;
+                background-color:$color_6 ;
+                border-bottom: 2px solid $color_10;
+                color: $color_7 ;
+                &:focus{
+                  color: $color_7 ;
+                }
+              }
+
+            }
+           
+            button[type=submit] {
+                background-color: $background-color_4;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: all .5s ease;
+                width: 50%;
+                margin: 0 auto;
+            
+                &:hover {
+                  color: $color_5 ;
+                  border: 1px solid $color_5;
+                  background-color: $color_6 ;
+                }
+              }
+              
+        }
+    }  
+}
+
+.contact-address{
+  padding:$padding_desktops_section;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 50px;
+  margin: 0 auto;
+   text-align: center;
+  .address-content{
+    display: flex;
+    flex-direction: column;
+    i{
+      font-size: 35px;
+      display: block !important;
+      margin-bottom: 25px;
+    }
+    h4{
+      font-size: 12px;
+      line-height: 20px;
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+    p{
+      font-size: 14px;
+      margin-bottom: 10px;
+      margin-top: auto;
+    }
+    a{
+      margin-top: 15px;
+      margin-top: auto;
+      font-size: 12px;
+      display: inline-block !important;
+      color: $color_5 ;
+      position: relative;
+      width: 65%;
+      margin: 0 auto;
+      &::after{
+        position: absolute;
+        content: "";
+        height: 1px;
+        left: -10px;
+        top: 53%;
+        width: calc(100% + 20px);
+       
+        background-color: $color_5 ;
+      }
+
+    }
+  }
+}
+
+@media (max-width: $desktops) {
+  .contact-form{
+    .contact-banner-form{
+      padding: 50px;
+    }
+  }
+  .contact-address{
+    padding:$padding_desktops_section;
+  }
+}
+@media (max-width: $laptops) {
+  .contact-address{
+    padding:$padding_laptops_section;
+    grid-template-columns: repeat(2,1fr);
+    .address-content{
+      align-items: center;
+    }
+  }
+}
+@media (max-width: $mobiles) {
+  .contact-form{
+    grid-template-columns: repeat(1,1fr);
+    .contact-banner-form{
+      padding:$padding_mobiles_section;
+    }
+  }
+  .contact-address{
+    padding:$padding_mobiles_section;
+    grid-template-columns: repeat(1,1fr);
+  }
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @media (max-width: $desktops) {
+//     .blog-container{
+//       padding:$padding_desktops_section;
+//     }
+// }
+//   @media (max-width: $laptops) {
+//     .blog-container{
+//       padding:$padding_laptops_section;
+//       .blog-box{
+//         display: grid;
+//         grid-template-columns: repeat(2,1fr);
+//         gap: 15px;
+//     }
+// }
+    
+//   }
+//   @media (max-width: $mobiles) {
+//     .blog-container{
+//         padding:$padding_mobiles_section;
+//         .blog-box{
+//             display: grid;
+//             grid-template-columns: repeat(1,1fr);
+//             gap: 30px;
+//         }
+//     }
+   
+//   }

@@ -30,26 +30,27 @@
         <div class="bg-overlay"></div>
         <div class="navbar-container">
           <div class="navbar-logo">
-            <a href="#"
+            <a href="#" class="logo-white"
               ><img src="./assets/homePage/logo-white.png.webp" alt=""
             /></a>
+            <a href="#" class="logo-black"
+              ><img src="./assets/homePage/logo.png.webp" alt=""
+            /></a>
           </div>
-          <div class="navbar-links">
+          <div class="navbar-links hide">
             <ul>
               <li><a href="#">HOME</a></li>
-              <li><a href="#">ABOUT</a></li>
-              <li><a href="#">SERVICES</a></li>
-              <li><a href="#">WORK</a></li>
-              <li><a href="#">TEAM</a></li>
-              <li><a href="#">BLOG</a></li>
-              <li><a href="#">CLIENTS</a></li>
-              <li><a href="#">CONTACT</a></li>
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#service">SERVICES</a></li>
+              <li><a href="#work">WORK</a></li>
+              <li><a href="#team">TEAM</a></li>
+              <li><a href="#blog">BLOG</a></li>
+              <li><a href="#clients">CLIENTS</a></li>
+              <li><a href="#contact">CONTACT</a></li>
             </ul>
           </div>
           <div class="navbar-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
+            <i class="fa-solid fa-bars"></i>
           </div>
         </div>
         <div class="text-center-homepage">
@@ -288,7 +289,7 @@
       </div>
       <!-- SERVICE-INFORMATION -->
       <div class="service-information">
-        <div class="service-i-content">
+        <div class="service-i-content d4 hiddenLeft">
           <div class="service-i-title">
             <h5>We're small but impressive.</h5>
             <h5>Hand crafted pixel perfect designs.</h5>
@@ -481,7 +482,7 @@
         </div>
       </div>
       <div class="work-4">
-        <div class="work-4-brand-left">
+        <div class="work-4-brand-left d1 hiddenLeft">
           <div class="bg-overlay1"></div>
           <div class="work-4-image-brand">
             <img src="./assets/work/work-bg.jpeg" alt="" />
@@ -494,7 +495,7 @@
             <i class="fa-solid fa-quote-left"></i>
           </div>
         </div>
-        <div class="work-4-banner-right">
+        <div class="work-4-banner-right d1 hiddenRight">
           <span>We create premium designs and technology</span>
           <h4>A digital studio crafting beautiful experiences.</h4>
           <h6>
@@ -513,7 +514,7 @@
         </div>
       </div>
       <div class="work-5">
-        <div class="work-5-content">
+        <div class="work-5-content d1 hiddenRight">
           <h2>01</h2>
           <span>Discussion of the Idea </span>
           <p>
@@ -521,7 +522,7 @@
             industry. Lorem Ipsum has been the industry’s standard text
           </p>
         </div>
-        <div class="work-5-content">
+        <div class="work-5-content d2 hiddenRight">
           <h2>02</h2>
           <span>Elaboration of the Core </span>
           <p>
@@ -529,7 +530,7 @@
             industry. Lorem Ipsum has been the industry’s standard text
           </p>
         </div>
-        <div class="work-5-content">
+        <div class="work-5-content d3 hiddenRight">
           <h2>03</h2>
           <span>Testing for Perfection</span>
           <p>
@@ -537,7 +538,7 @@
             industry. Lorem Ipsum has been the industry’s standard text
           </p>
         </div>
-        <div class="work-5-content">
+        <div class="work-5-content d4 hiddenRight">
           <h2>04</h2>
           <span>Handcrafted Templates</span>
           <p>
@@ -558,28 +559,28 @@
             </h6>
           </div>
           <div class="work-6-box">
-            <div class="box-6-container">
+            <div class="box-6-container hiddenLeft d1">
               <span class="box-6-icons"
                 ><i class="fa-solid fa-pencil"></i
               ></span>
               <p>Creative Elements</p>
               <div class="text-bottom-line"></div>
             </div>
-            <div class="box-6-container">
+            <div class="box-6-container hiddenLeft d2">
               <span class="box-6-icons">
                 <i class="fa-solid fa-screwdriver-wrench"></i>
               </span>
               <p>Creative Elements</p>
               <div class="text-bottom-line"></div>
             </div>
-            <div class="box-6-container">
+            <div class="box-6-container hiddenLeft d3">
               <span class="box-6-icons">
                 <i class="fa-solid fa-layer-group"></i>
               </span>
               <p>Creative Elements</p>
               <div class="text-bottom-line"></div>
             </div>
-            <div class="box-6-container">
+            <div class="box-6-container hiddenLeft d4">
               <span class="box-6-icons">
                 <i class="fa-solid fa-scissors fa-rotate-270"></i>
               </span>
@@ -605,83 +606,351 @@
           </div>
         </div>
         <div class="creative-box-container">
-          <div class="creative-box">
-            <div class="creative-box-image">
-              <img src="./assets/team/team-person-1.webp" alt="" />
-              <div class="bg-overlay-creative"></div>
-            </div>
+          <div class="creative-box hiddenBottom d1">
+            <div class="creative-box-content">
+              <div class="image-creative">
+                <img src="./assets/team/team-person-1.webp" alt="" />
+                <div class="bg-overlay-creative"></div>
+              </div>
 
-            <div class="creative-box-name">
-              <h5>HERMAN MILLER</h5>
-              <p>CO-FOUNDER / DESIGN</p>
-            </div>
-            <div class="creative-box-infor">
-              <div class="creative-desc">
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry dummy text.
-                </p>
+              <div class="creative-box-name">
+                <h5>HERMAN MILLER</h5>
+                <p>CO-FOUNDER / DESIGN</p>
               </div>
-              <div class="creative-icon"></div>
+              <div class="creative-box-infor">
+                <div class="creative-desc">
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry dummy text.
+                  </p>
+                </div>
+                <div class="creative-icon">
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="creative-box">
-            <div class="creative-box-image">
-              <img src="./assets/team/team-person-2.webp" alt="" />
-              <div class="bg-overlay-creative"></div>
-            </div>
-            <div class="creative-box-name">
-              <h5>HERMAN MILLER</h5>
-              <p>CO-FOUNDER / DESIGN</p>
-            </div>
-            <div class="creative-box-infor">
-              <div class="creative-desc">
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry dummy text.
-                </p>
+          <div class="creative-box hiddenBottom d2">
+            <div class="creative-box-content">
+              <div class="image-creative">
+                <img src="./assets/team/team-person-2.webp" alt="" />
+                <div class="bg-overlay-creative"></div>
               </div>
-              <div class="creative-icon"></div>
+              <div class="creative-box-name">
+                <h5>HERMAN MILLER</h5>
+                <p>CO-FOUNDER / DESIGN</p>
+              </div>
+              <div class="creative-box-infor">
+                <div class="creative-desc">
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry dummy text.
+                  </p>
+                </div>
+                <div class="creative-icon">
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="creative-box">
-            <div class="creative-box-image">
-              <img src="./assets/team/team-person-3.webp" alt="" />
-              <div class="bg-overlay-creative"></div>
-            </div>
-            <div class="creative-box-name">
-              <h5>HERMAN MILLER</h5>
-              <p>CO-FOUNDER / DESIGN</p>
-            </div>
-            <div class="creative-box-infor">
-              <div class="creative-desc">
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry dummy text.
-                </p>
+          <div class="creative-box hiddenBottom d3">
+            <div class="creative-box-content">
+              <div class="image-creative">
+                <img src="./assets/team/team-person-3.webp" alt="" />
+                <div class="bg-overlay-creative"></div>
               </div>
-              <div class="creative-icon"></div>
+              <div class="creative-box-name">
+                <h5>HERMAN MILLER</h5>
+                <p>CO-FOUNDER / DESIGN</p>
+              </div>
+              <div class="creative-box-infor">
+                <div class="creative-desc">
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry dummy text.
+                  </p>
+                </div>
+                <div class="creative-icon">
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="creative-box">
-            <div class="creative-box-image">
-              <img src="./assets/team/team-person-4.webp" alt="" />
-              <div class="bg-overlay-creative"></div>
-            </div>
-            <div class="creative-box-name">
-              <h5>HERMAN MILLER</h5>
-              <p>CO-FOUNDER / DESIGN</p>
-            </div>
-            <div class="creative-box-infor">
-              <div class="creative-desc">
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry dummy text.
-                </p>
+          <div class="creative-box hiddenBottom d4">
+            <div class="creative-box-content">
+              <div class="image-creative">
+                <img src="./assets/team/team-person-4.webp" alt="" />
+                <div class="bg-overlay-creative"></div>
               </div>
-              <div class="creative-icon"></div>
+              <div class="creative-box-name">
+                <h5>HERMAN MILLER</h5>
+                <p>CO-FOUNDER / DESIGN</p>
+              </div>
+              <div class="creative-box-infor">
+                <div class="creative-desc">
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry dummy text.
+                  </p>
+                </div>
+                <div class="creative-icon">
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+    <!-- BLOG -->
+    <section id="blog">
+      <div class="blog-container">
+        <div class="blog-text">
+          <h5>CREATIVE PEOPLE</h5>
+          <div>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry’s standard dummy text
+              ever since. Lorem Ipsum has been the industry. Lorem Ipsum has
+              been the industry’s standard dummy text since.
+            </p>
+          </div>
+        </div>
+        <section class="blog-box">
+          <article class="hiddenBottom d1">
+            <div class="blog-img">
+              <img src="./assets/blog/blog-img1.jpg" alt="" />
+            </div>
+            <div class="blog-box-text">
+              <h2>I like the body. I like to design everything to do with.</h2>
+              <p>BY JAY BENJAMIN | 20 APRIL 2017</p>
+              <h3>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum standard...
+              </h3>
+            </div>
+          </article>
+          <article class="hiddenBottom d3">
+            <div class="blog-img">
+              <img src="./assets/blog/blog-img2.jpg" alt="" />
+            </div>
+            <div class="blog-box-text">
+              <h2>Recognizing the need is the primary condition for design.</h2>
+              <p>BY JAY BENJAMIN | 20 APRIL 2017</p>
+              <h3>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum standard...
+              </h3>
+            </div>
+          </article>
+          <article class="hiddenBottom d4">
+            <div class="blog-img">
+              <img src="./assets/blog/blog-img3.jpg" alt="" />
+            </div>
+            <div class="blog-box-text">
+              <h2>Styles come and go. design is a language, not a style.</h2>
+              <p>BY JAY BENJAMIN | 20 APRIL 2017</p>
+              <h3>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum standard...
+              </h3>
+            </div>
+          </article>
+        </section>
+      </div>
+    </section>
+    <!-- CLIENTS -->
+    <section id="clients">
+      <div class="clients-container">
+        <div class="bg-overlay-clients"></div>
+        <div class="clients-slide">
+          <div class="clients-items">
+            <img src="./assets/blog/clients-logo1.png.webp" alt="" />
+          </div>
+          <div class="clients-items">
+            <img src="./assets/blog/clients-logo2.png.webp" alt="" />
+          </div>
+          <div class="clients-items">
+            <img src="./assets/blog/clients-logo3.png.webp" alt="" />
+          </div>
+          <div class="clients-items">
+            <img src="./assets/blog/clients-logo4.png.webp" alt="" />
+          </div>
+          <div class="clients-items">
+            <img src="./assets/blog/clients-logo1.png.webp" alt="" />
+          </div>
+          <div class="clients-items">
+            <img src="./assets/blog/clients-logo2.png.webp" alt="" />
+          </div>
+          <div class="clients-items">
+            <img src="./assets/blog/clients-logo3.png.webp" alt="" />
+          </div>
+          <div class="clients-items">
+            <img src="./assets/blog/clients-logo4.png.webp" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="clients-box">
+        <div class="clients-text">
+          <h5>CREATIVE PEOPLE</h5>
+          <div>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry’s standard dummy text
+              ever since. Lorem Ipsum has been the industry. Lorem Ipsum has
+              been the industry’s standard dummy text since.
+            </p>
+          </div>
+        </div>
+        <div class="clients-people">
+          <div class="people-box hiddenRight d2">
+            <img src="./assets/client/avtar-01.jpg.webp" alt="" />
+            <p>
+              Trust us we looked for a very long time and wasted thousands of
+              dollars testing other teams, freelancers, and outsource companies.
+            </p>
+            <div>
+              <i class="fa-solid fa-quote-left"></i>
+              <h4>SHOKO MUGIKURA</h4>
+              <p>DESIGN MANAGER</p>
+            </div>
+          </div>
+          <div class="people-box hiddenRight d3">
+            <img src="./assets/client/avtar-03.jpg.webp" alt="" />
+            <p>
+              Trust us we looked for a very long time and wasted thousands of
+              dollars testing other teams, freelancers, and outsource companies.
+            </p>
+            <div>
+              <i class="fa-solid fa-quote-left"></i>
+              <h4>ALEXANDER SMITH</h4>
+              <p>CO FOUNDER / CEO</p>
+            </div>
+          </div>
+          <div class="people-box hiddenRight d4">
+            <img src="./assets/client/avtar-02.jpg.webp" alt="" />
+            <p>
+              Their testimonial are easy to work with and helped me make amazing
+              websites in a short amount of time. Thanks guys for all your hard
+              work.
+            </p>
+            <div>
+              <i class="fa-solid fa-quote-left"></i>
+              <h4>LINDSAY SWANSON</h4>
+              <p>CREATIVE DIRECTOR</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="contact-form">
+        <div class="contact-brand-left">
+          <div class="contact-image-brand">
+            <img src="./assets/contact/homepage-9-parallax-img6.jpeg" alt="" />
+          </div>
+        </div>
+        <div class="contact-banner-form">
+          <div class="contact-form-title">
+            <span>FILL OUT THE FORM AND WE'LL BE IN TOUCH SOON!</span>
+            <h4>READY TO REQUEST A QUOTE?</h4>
+          </div>
+
+          <form class="contact-form">
+            <div class="field">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="field__input"
+                placeholder="Name*"
+              />
+            </div>
+            <div class="field">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="field__input"
+                placeholder="Email * "
+              />
+            </div>
+            <div class="field">
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                class="field__input"
+                placeholder="Subject *"
+              />
+            </div>
+            <div class="field">
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Enter your message here"
+                required
+              ></textarea>
+            </div>
+            <button type="submit">SEND MESSAGE</button>
+          </form>
+        </div>
+      </div>
+      <div class="contact-address">
+        <div class="address-content hiddenBottom d2">
+          <i class="fa-solid fa-location-dot"></i>
+          <h4>VISIT OUR OFFICE</h4>
+          <p>401 Broadway, 24th Floor</p>
+          <p>New York, NY 10013</p>
+          <a href="#">GET ADDRESS</a>
+        </div>
+        <div class="address-content hiddenBottom d3">
+          <i class="fa-regular fa-comment-dots"></i>
+          <h4>VISIT OUR OFFICE</h4>
+          <p>Phone: 1-800-222-000</p>
+          <p>Fax: 1-800-222-002</p>
+
+          <a href="#">CALL US</a>
+        </div>
+        <div class="address-content hiddenBottom d4">
+          <i class="fa-regular fa-envelope"></i>
+          <h4>VISIT OUR OFFICE</h4>
+          <p>info@yourdomain.com</p>
+          <p>hr@yourdomain.com</p>
+          <a href="#">SEND E-MAIL</a>
+        </div>
+        <div class="address-content hiddenBottom d5">
+          <i class="fa-solid fa-bullhorn"></i>
+          <h4>CUSTOMER SERVICES</h4>
+          <p>Lorem Ipsum is simply</p>
+          <p>dummy text of the printing</p>
+          <a href="#">OPEN TICKET</a>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <section id="footer">
+      <div class="footer-content">
+        <a href="#"> <img src="./assets/homePage/logo.png.webp" alt="" /></a>
+        <p>© 2023 POFO is Proudly Powered by TienDao</p>
+        <div class="footer-icon">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
         </div>
       </div>
     </section>

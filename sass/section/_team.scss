@@ -1,10 +1,7 @@
 
 .creative-people{
-    padding-left: 15rem;
-    padding-right: 15rem;
-    padding-top: 130px;
-    padding-bottom: 130px;
-    text-align: center;
+      padding:$padding_desktops_section;
+      text-align: center;
     .creative-text{
         margin-bottom: 15% !important;
         padding-left: 15px;
@@ -29,38 +26,97 @@
         grid-template-columns: repeat(4,1fr);
         gap: 20px;
         .creative-box {
-            .creative-box-image {
+            .creative-box-content {
               position: relative;
-              img {
-                height: 100%;
-                width: 100%;
-                display: block;
-              }
-              .bg-overlay-creative {
-                opacity: 0;
-                position: absolute;
-                overflow: hidden;
+              .image-creative{
+                position: relative;
                 transition: all .5s ease; 
-                top: 0;
-                height: 100%;
-                width: 100%;
-                background-color: $background-color_4;
+                img {
+                  max-width: 100%;
+                  display: block;
+                }
+                .bg-overlay-creative {
+                  opacity: 0;
+                  position: absolute;
+                  overflow: hidden;
+                  transition: all .5s ease; 
+                  top: 0;
+                  height: 100%;
+                  width: 100%;
+                  background-color: $background-color_4;
+                }
               }
+              .creative-box-infor{
+                position: relative;
+                bottom:  50px;
+                opacity: 0;
+                visibility: hidden;
+                transition: all .3s ease; 
+                padding: 25px 0px;
+                .creative-desc{
+                  border-bottom: 1px solid $color_5;
+                  padding-bottom: 10px;
+                }
+                .creative-icon{
+                  display: grid;
+                  grid-template-columns: repeat(4,1fr);
+                  justify-content: center;
+                  gap: 5px;
+                  padding: 30px 0px;
+                  height: 10px;
+                  width: 70%;
+                  margin: 0 auto;
+                  a{  
+                    i{
+                      transition: all .3s ease; 
+                      color: $color_6;
+                    }
+                  }
+                }
+              }
+              .creative-box-name{
+                position: absolute;
+                padding: 20px 0px;
+                width: 100%;
+                bottom: 10%;
+                transition: all .2s ease;
+                h5{
+                  font-size: 12px;
+                  font-weight: 700;
+                }
+              }
+              
             }
             &:hover {
               overflow: hidden;
-              .creative-box-image {
+              .image-creative {
                 .bg-overlay-creative {
-                  opacity: 0.7;
+                  opacity: 0.8;
                 }
               }
+              .creative-box-infor{
+                bottom: 0;
+                opacity: 1;
+                visibility: visible;
+              }
+              .creative-box-name{
+                bottom: 60%;
+                h5{
+                  color: white;
+                }
+                p{
+                  color: white;
+                }
+              }
+              .creative-icon{        
+                  i{
+                    &:hover{
+                      color: $color_5 !important;
+                    }
+                  }
+              }
             }
-
-
           }
-          
-          
-
         .creative-box-name{
             h5{
                 font-size: 12px !important;
@@ -74,4 +130,34 @@
             }
         }
     }
+}
+// RESPONSIVE
+
+@media (max-width: $desktops) {
+  .creative-people{
+    padding:$padding_desktops_section;
+  }
+}
+
+
+@media (max-width: $laptops) {
+  .creative-people{
+    padding:$padding_laptops_section;
+
+    .creative-box-container{
+      grid-template-columns: repeat(2,1fr);
+    }
+  }
+  
+}
+
+
+@media (max-width: $mobiles) {
+  .creative-people{
+    padding: 75px calc(5rem);
+    .creative-box-container{
+      grid-template-columns: repeat(1,1fr);
+    }
+  }
+ 
 }

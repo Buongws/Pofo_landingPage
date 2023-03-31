@@ -1,8 +1,5 @@
 .service {
-  padding-left: 15rem;
-  padding-right: 15rem;
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding: $padding_desktops_section;
   background-color: $background-color_3;
 
   .service-title {
@@ -128,8 +125,7 @@
 }
 @media (max-width: $desktops) {
   .service {
-    padding-left: 10rem;
-    padding-right: 10rem;
+   padding: $padding_desktops_section ;
     .service-box {
       gap: 20px;
       grid-template-columns: repeat(2, 1fr);
@@ -138,10 +134,7 @@
 }
 @media (max-width: $laptops) {
   .service {
-    padding-left: 5rem;
-    padding-right: 5rem;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: $padding_laptops_section ;
     .service-box {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -149,6 +142,7 @@
 }
 @media (max-width: $mobiles) {
   .service {
+    padding: $padding_mobiles_section ;
     .service-box {
       grid-template-columns: repeat(1, 1fr);
       gap: 40px;
@@ -197,10 +191,7 @@
 }
 // SERVICE NUMBER
 .service-number {
-  padding-left: 15rem;
-  padding-right: 15rem;
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding: $padding_desktops_section ;
   background-color: white;
   overflow: hidden;
   display: grid;
@@ -233,22 +224,19 @@
   .service-number {
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding:$padding_desktops_section;
   }
 }
 @media (max-width:$laptops) {
   .service-number {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding:$padding_laptops_section;
   }
 }
 @media (max-width: $mobiles) {
   .service-number {
     grid-template-columns: repeat(1, 1fr);
     margin: 0 auto;
+    padding:$padding_mobiles_section;
     .service-number-content {
       display: flex;
       justify-content: center;
@@ -334,7 +322,7 @@
     flex-direction: column;
     .service-i-content {
       padding-left: 5rem;
-    padding-right: 5rem;
+      padding-right: 5rem;
       width: 100%;
     }
     .service-i-image {

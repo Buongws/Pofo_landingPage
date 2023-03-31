@@ -1,0 +1,33 @@
+.footer-content{
+    padding:50px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:$background-color_3 ;
+    a{
+        
+        img{
+            width: 100%;
+        }
+    }
+    p{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .footer-icon{
+        a{
+            i{
+                margin-left: 10px;
+            color: $color_6 ;
+            }
+        }
+    }
+}
+
+  @media (max-width: $mobiles) {
+    .footer-content{
+        flex-direction: column;
+        gap: 30px;
+    }
+   
+  }

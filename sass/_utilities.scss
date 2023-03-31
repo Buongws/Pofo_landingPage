@@ -3,9 +3,11 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  
 }
 body {
   font-family: $font-family_1;
+  
 }
 h1,
 h2,
@@ -70,6 +72,22 @@ span{
   transition: all 1s;
 }
 .showRight {
+  opacity: 1;
+  -webkit-filter: blur(0);
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+// Hidden Bottom
+
+.hiddenLeft {
+  opacity: 0;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+.showLeft {
   opacity: 1;
   -webkit-filter: blur(0);
   filter: blur(0);

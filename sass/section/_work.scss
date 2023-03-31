@@ -2,10 +2,7 @@
 
 
 .work-1 {
-  padding-left: 15rem;
-  padding-right: 15rem;
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding:$padding_desktops_section;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -95,10 +92,7 @@
   }
 }
 .work-3{
-    padding-left: 15rem;
-    padding-right: 15rem;
-    padding-top: 130px;
-    padding-bottom: 130px;
+    padding:$padding_desktops_section;
     display: grid;
     grid-template-columns: repeat(2,2fr);
 
@@ -116,7 +110,7 @@
         font-size: 14px;
       }
     }
-  .skills-bar-container{
+    .skills-bar-container{
     .skill {
       padding: 15px;
       margin-bottom: 10px;
@@ -158,11 +152,11 @@
 
 }
 .work-4{
-    padding-top: 130px;
     max-width: 100%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-  
+    overflow: hidden;
+    background-color: #232323;
   .work-4-brand-left{
     position: relative;
     overflow: hidden;
@@ -209,10 +203,8 @@
     justify-content: center;
     flex-direction: column;
     background-color: $color_6;
-    padding-top: 10% !important;
-    padding-right: 10% !important;
-    padding-bottom: 10% !important;
-    padding-left: 10% !important;
+    padding: 5rem;
+   
     
     span{
       color: $color_7;
@@ -263,6 +255,7 @@
   display: grid;
   grid-template-columns: repeat(4,1fr);
   text-align: center;
+  overflow: hidden;
   .work-5-content{
     padding: 15% !important;
     border-right: 0.5px solid $color_9;
@@ -281,10 +274,7 @@
 }
 .work-6{
   background-image: url(../../assets/work/work-bg-2.jpeg);
-  padding-left: 15rem;
-  padding-right: 15rem;
-  padding-top: 5%;
-  padding-bottom:5%;
+  padding:$padding_desktops_section;
   width: 100%;
   background-size: cover;
   background-attachment: fixed;
@@ -317,6 +307,7 @@
   .work-6-box{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    gap: 20px;
 
     .box-6-container{
       margin: 0 auto;
@@ -369,8 +360,7 @@
 }
 @media (max-width: $desktops) {
   .work-1  {
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding:$padding_desktops_section;
   }
   .work-2 {
     .gallery {
@@ -378,20 +368,20 @@
       gap: 10px;
     }
   }
+  .work-4-banner-right{
+    padding:$padding_desktops_section;
+  }
   .work-3{
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding:$padding_desktops_section;
+  }
+  .work-6{
+    padding:$padding_desktops_section;
   }
   
 }
-
-
 @media (max-width: $laptops) {
   .work-1 {
-    padding-left: 5rem;
-    padding-right: 5rem;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding:$padding_laptops_section;
   }
   .work-2 {
     .gallery {
@@ -400,11 +390,22 @@
     }
   }
   .work-3{
+    padding:$padding_laptops_section;
     grid-template-columns: repeat(1,1fr);
     .skills-text{
-
       margin-left: 15px;
       margin-bottom: 15px;
+    }
+    .skills-bar-container{
+      .skill{
+        .skill-bar{
+          .skill-percentage-text{
+            right: -5%;
+          }
+        }
+        
+      }
+
     }
   }
   .work-4{
@@ -419,6 +420,7 @@
       }
     }
     .work-4-banner-right{
+      padding:$padding_laptops_section;
       text-align: center;
       display: block;
     }
@@ -431,10 +433,16 @@
     }
 
   }
+  .work-6{
+    padding:$padding_laptops_section;
+  }
 }
 
 
 @media (max-width: $mobiles) {
+  .work-1{
+    padding:$padding_mobiles_section;
+  }
   .work-2 {
     .filter-buttons {
       flex-direction: column;
@@ -455,9 +463,9 @@
     }
   }
   .work-3{
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding:$padding_mobiles_section;
   }
+ 
   .work-5{
     grid-template-columns: repeat(1, 1fr);
     h2{
@@ -470,8 +478,8 @@
     }
   }
   .work-6{
-    padding-left: 15px;
-    padding-right: 15px;
+    padding:$padding_mobiles_section;
+    
     width: 100%;
     position: relative;
     .work-6-text{

@@ -200,3 +200,28 @@ const observerScroll = new IntersectionObserver((entries) => {
 skillBars.forEach((skillBar) => {
   observerScroll.observe(skillBar);
 });
+
+// --------------------RESPONSIVE NAVBAR-------------------------------------------
+
+const toggleNavBar = document.querySelector(".navbar-toggle");
+const navLink = document.querySelector(".navbar-links");
+
+toggleNavBar.addEventListener("click", () => {
+  console.log("alo");
+  navLink.classList.toggle("hide");
+});
+
+// -----------------OBSERVER NAV FIXED------------------------------------
+const navbar = document.querySelector(".navbar-container");
+const section_1 = document.querySelector("#about");
+
+// observer
+
+const initalScroll = section_1.getBoundingClientRect();
+
+window.addEventListener("scroll", function (event) {
+  console.log(window.scrollY);
+  if (window.scrollY > initalScroll.top) {
+    navbar.classList.add("sticky");
+  } else navbar.classList.remove("sticky");
+});
