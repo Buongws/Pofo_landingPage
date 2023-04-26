@@ -142,7 +142,7 @@
       ul{
         li{
           a{
-            color:$color_6 ;
+            color:$color_9  !important;
           }
         }
       }
@@ -189,13 +189,16 @@
           padding: 10px 0px;
           margin: 0 !important;
           border-bottom: 1px solid $color_8 ;
+          
         }
         a {
           font-size: 12px;
+          color:$color_9  !important;
         }
       }
       .navbar-toggle {
         display: block;
+        
       }
       
     }

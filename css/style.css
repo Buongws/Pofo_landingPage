@@ -432,7 +432,7 @@ span {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 }
 #navbar .sticky .navbar-links ul li a {
-  color: #232323;
+  color: #ffffff;
 }
 #navbar .sticky .navbar-logo .logo-white {
   display: none;
@@ -770,10 +770,21 @@ span {
   font-size: 15px;
   margin: 0;
 }
-.service-information .service-i-content .question-content .question header h5 span {
+.service-information
+  .service-i-content
+  .question-content
+  .question
+  header
+  h5
+  span {
   font-weight: 600;
 }
-.service-information .service-i-content .question-content .question header button {
+.service-information
+  .service-i-content
+  .question-content
+  .question
+  header
+  button {
   padding: 0;
   border: none;
   background: none;
@@ -1491,15 +1502,29 @@ span {
 .creative-people .creative-box-container .creative-box .creative-box-content {
   position: relative;
 }
-.creative-people .creative-box-container .creative-box .creative-box-content .image-creative {
+.creative-people
+  .creative-box-container
+  .creative-box
+  .creative-box-content
+  .image-creative {
   position: relative;
   transition: all 0.5s ease;
 }
-.creative-people .creative-box-container .creative-box .creative-box-content .image-creative img {
+.creative-people
+  .creative-box-container
+  .creative-box
+  .creative-box-content
+  .image-creative
+  img {
   max-width: 100%;
   display: block;
 }
-.creative-people .creative-box-container .creative-box .creative-box-content .image-creative .bg-overlay-creative {
+.creative-people
+  .creative-box-container
+  .creative-box
+  .creative-box-content
+  .image-creative
+  .bg-overlay-creative {
   opacity: 0;
   position: absolute;
   overflow: hidden;
@@ -1509,7 +1534,11 @@ span {
   width: 100%;
   background-color: #ff214f;
 }
-.creative-people .creative-box-container .creative-box .creative-box-content .creative-box-infor {
+.creative-people
+  .creative-box-container
+  .creative-box
+  .creative-box-content
+  .creative-box-infor {
   position: relative;
   bottom: 50px;
   opacity: 0;
@@ -1517,11 +1546,21 @@ span {
   transition: all 0.3s ease;
   padding: 25px 0px;
 }
-.creative-people .creative-box-container .creative-box .creative-box-content .creative-box-infor .creative-desc {
+.creative-people
+  .creative-box-container
+  .creative-box
+  .creative-box-content
+  .creative-box-infor
+  .creative-desc {
   border-bottom: 1px solid #ff214f;
   padding-bottom: 10px;
 }
-.creative-people .creative-box-container .creative-box .creative-box-content .creative-box-infor .creative-icon {
+.creative-people
+  .creative-box-container
+  .creative-box
+  .creative-box-content
+  .creative-box-infor
+  .creative-icon {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;
@@ -1531,42 +1570,80 @@ span {
   width: 70%;
   margin: 0 auto;
 }
-.creative-people .creative-box-container .creative-box .creative-box-content .creative-box-infor .creative-icon a i {
+.creative-people
+  .creative-box-container
+  .creative-box
+  .creative-box-content
+  .creative-box-infor
+  .creative-icon
+  a
+  i {
   transition: all 0.3s ease;
   color: #232323;
 }
-.creative-people .creative-box-container .creative-box .creative-box-content .creative-box-name {
+.creative-people
+  .creative-box-container
+  .creative-box
+  .creative-box-content
+  .creative-box-name {
   position: absolute;
   padding: 20px 0px;
   width: 100%;
   bottom: 10%;
   transition: all 0.2s ease;
 }
-.creative-people .creative-box-container .creative-box .creative-box-content .creative-box-name h5 {
+.creative-people
+  .creative-box-container
+  .creative-box
+  .creative-box-content
+  .creative-box-name
+  h5 {
   font-size: 12px;
   font-weight: 700;
 }
 .creative-people .creative-box-container .creative-box:hover {
   overflow: hidden;
 }
-.creative-people .creative-box-container .creative-box:hover .image-creative .bg-overlay-creative {
+.creative-people
+  .creative-box-container
+  .creative-box:hover
+  .image-creative
+  .bg-overlay-creative {
   opacity: 0.8;
 }
-.creative-people .creative-box-container .creative-box:hover .creative-box-infor {
+.creative-people
+  .creative-box-container
+  .creative-box:hover
+  .creative-box-infor {
   bottom: 0;
   opacity: 1;
   visibility: visible;
 }
-.creative-people .creative-box-container .creative-box:hover .creative-box-name {
+.creative-people
+  .creative-box-container
+  .creative-box:hover
+  .creative-box-name {
   bottom: 60%;
 }
-.creative-people .creative-box-container .creative-box:hover .creative-box-name h5 {
+.creative-people
+  .creative-box-container
+  .creative-box:hover
+  .creative-box-name
+  h5 {
   color: white;
 }
-.creative-people .creative-box-container .creative-box:hover .creative-box-name p {
+.creative-people
+  .creative-box-container
+  .creative-box:hover
+  .creative-box-name
+  p {
   color: white;
 }
-.creative-people .creative-box-container .creative-box:hover .creative-icon i:hover {
+.creative-people
+  .creative-box-container
+  .creative-box:hover
+  .creative-icon
+  i:hover {
   color: #ff214f !important;
 }
 .creative-people .creative-box-container .creative-box-name h5 {
@@ -2064,7 +2141,8 @@ span {
   flex-direction: column;
   gap: 20px;
 }
-.contact-form .contact-banner-form .contact-form .field input, .contact-form .contact-banner-form .contact-form .field textarea {
+.contact-form .contact-banner-form .contact-form .field input,
+.contact-form .contact-banner-form .contact-form .field textarea {
   width: 100%;
   margin: 0 0 10px 0;
   max-width: 100%;
@@ -2076,10 +2154,11 @@ span {
   border-bottom: 2px solid #484848;
   color: #6f6f6f;
 }
-.contact-form .contact-banner-form .contact-form .field input:focus, .contact-form .contact-banner-form .contact-form .field textarea:focus {
+.contact-form .contact-banner-form .contact-form .field input:focus,
+.contact-form .contact-banner-form .contact-form .field textarea:focus {
   color: #6f6f6f;
 }
-.contact-form .contact-banner-form .contact-form button[type=submit] {
+.contact-form .contact-banner-form .contact-form button[type="submit"] {
   background-color: #ff214f;
   color: white;
   padding: 12px 20px;
@@ -2090,7 +2169,7 @@ span {
   width: 50%;
   margin: 0 auto;
 }
-.contact-form .contact-banner-form .contact-form button[type=submit]:hover {
+.contact-form .contact-banner-form .contact-form button[type="submit"]:hover {
   color: #ff214f;
   border: 1px solid #ff214f;
   background-color: #232323;

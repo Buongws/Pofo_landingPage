@@ -426,7 +426,7 @@ span {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 }
 #navbar .sticky .navbar-links ul li a {
-  color: #232323;
+  color: #d6d5d5 !important;
 }
 #navbar .sticky .navbar-logo .logo-white {
   display: none;
@@ -467,6 +467,7 @@ span {
   }
   #navbar .navbar-container .navbar-links a {
     font-size: 12px;
+    color: #d6d5d5 !important;
   }
   #navbar .navbar-container .navbar-toggle {
     display: block;
